@@ -93,11 +93,12 @@ function NavBar() {
             src="https://img.freepik.com/free-photo/close-up-portrait-curly-handsome-european-male_176532-8133.jpg?t=st=1715793785~exp=1715797385~hmac=5fa2020d2d062ff5c0cf10df78084e851090d905f9d0847988bd8cc7614b9eac&w=1060"
           ></Avatar>
         </Icons>
-        <UserBox>
+        <UserBox
+          onClick={(e) => {
+            setOpen(true);
+          }}
+        >
           <Avatar
-            onClick={(e) => {
-              setOpen(true);
-            }}
             sx={{
               height: 30,
               width: 30,
